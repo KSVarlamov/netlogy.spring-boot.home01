@@ -8,7 +8,7 @@ import ru.netology.task01.config.SystemProfile;
 @RestController
 @RequestMapping("/")
 public class ProfileController {
-    private SystemProfile profile;
+    private final SystemProfile profile;
 
     public ProfileController(SystemProfile profile) {
         this.profile = profile;
